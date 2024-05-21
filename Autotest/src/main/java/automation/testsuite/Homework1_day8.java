@@ -30,19 +30,6 @@ public class Homework1_day8 extends CommonBase {
 		WebElement mobileNumberName = driver.findElement(By.name("mobile number"));
 		System.out.println("Mobile Number Name Element is: "+ mobileNumberName);
 	}
-	/*User Email:
-- class name: selectors-input jsSelector
-- tag name: input
-Password
-- class name:selectors-input jsSelector
-- tag name: input
-Company:
-- class name: form-control
-- tag name: input
-Mobible Number:r
-- class name:form-control
-- tag name: input
-*/
 	@Test
 	public void classNameElement() {
 		WebElement userEmailClassName = driver.findElement(By.className("jsSelector"));
