@@ -3,6 +3,7 @@ package automation.testsuite;
 import static org.testng.Assert.assertEquals;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -41,7 +42,8 @@ public class Homework_day12 extends CommonBase{
 		if(rdoNo.isEnabled() == true && rdoNo.isSelected() == false)
 		{
 			rdoNo.click();
-			Thread.sleep(3000);
+			//Thread.sleep(3000);
+			driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
 		}
 	}
 	
