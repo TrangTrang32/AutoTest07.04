@@ -18,6 +18,7 @@ public class LoginPageFactory {
 	}
 	public void LoginFunction(String email, String pass) {
 		emailElement.sendKeys(email);
+		emailElement.getText();
 		passwordElement.sendKeys(pass);
 		buttonLoginElement.click();
 	}

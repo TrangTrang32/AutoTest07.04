@@ -15,7 +15,7 @@ public class UpdateInfoTest extends CommonBase {
 	public void openPage() {
 		driver = initChromeTest(CT_PageURL.URL_ALADA);
 	}
-	@Test
+	@Test (priority = 1)
 	public void UpdateInfoSuccessfully() {
 		LoginPageFactory login = new LoginPageFactory(driver);
 		login.LoginFunction(CT_Account.EMAIL, CT_Account.PASS);
